@@ -1,0 +1,4 @@
+[Thumbnailer Entry]
+TryExec=font_thumb.sh
+Exec=font_thumb.sh %i %o %s
+MimeType=application/x-font-ttf;font/ttf;application/x-font-otf;font/otf
