@@ -4,7 +4,7 @@ Use your favorite file manager, such as PCManFM, to preview font files on Linux 
 
 ![preview](preview.png)
 
-One problem with desktop publishing on Linux is many of the fonts look the same. Scrolling through pages of similar fonts can be a pain. Use this tool to generate preview images. Then you can use file managers to trim down font selection to a manageable size. 
+One problem with desktop publishing on Linux is many of the fonts look the same. Scrolling through pages of similar fonts can be a pain. Use this tool to generate preview images. Then you can use file managers to trim down font selection or browse favorite fonts in a separate folder, such as `~/.local/share/fonts`.
 
 ## Get it from GitHub
  (clapping)
@@ -21,7 +21,6 @@ If, at some later date, we already see font previews in file managers, distros h
 
 This script requires [ImageMagick](https://imagemagick.org/index.php), which is probably available through your Distro's Package Manager.
 
-
 Fedora, Centos.
 `dnf install ImageMagick`
 
@@ -31,10 +30,9 @@ Ubuntu, Debian.
 Arch.
 `pacman -S ImageMagick`
 
-
 ## Quick Install (swoosh)
 
-Use the `inst.sh` script and log out of the desktop session (or reboot).
+Use the `inst.sh` script and log out of the desktop session (or reboot). Do not run with `sudo`.
 
 ## Manual Install
 
@@ -52,7 +50,7 @@ Now, log out of the desktop session, or reboot.
 
 ## Extending
 
-Currently only TTF and OTF fonts are supported. But it's really easy to extend. Simply look up the mime type of your font in the `mime` directory and add it to `ttf.tumbnailer`
+Currently only TTF and OTF fonts are supported. But it's really easy to extend. Simply look up the mime type of your font in the `mime` directory and add it to `ttf.tumbnailer
 
 `grep font /usr/share/mime/*`
 
