@@ -34,6 +34,10 @@ Arch.
 
 Use the `inst.sh` script and log out of the desktop session (or reboot). Do not run with `sudo`.
 
+## Problem?
+
+Kubuntu, possibly a few other distros do not ship with [bubblewrap configured with permissions](https://duckduckgo.com/?q=Kubuntu+sandboxing+thumbnailers+with+bubblewrap) to run custom thumtnailers. Try installing `ffmpegthumbnailer` and see if that configures the thumbnailer functionality.
+
 ## Manual Install
 
 Copy `fontThumb.sh` to somewhere in `$PATH`, such as `/bin`, `/usr/local/sbin`, or `~/.local/bin`.
@@ -46,7 +50,7 @@ Remove the old thumbnails on the system.
 
 `rm -rf ~/.cache/thumbnails/`
 
-Now, log out of the desktop session, or reboot.
+They might just work now. Or it may be necessary to log out of the desktop session, or reboot.
 
 ## Extending
 
